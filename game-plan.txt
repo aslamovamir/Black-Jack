@@ -1,0 +1,55 @@
+game():
+By default player is randomly assigned 2 cards
+By default the dealer is assigned 2 cards
+results are printed
+
+the programs halts:
+        The player is asked to choose: Hit() OR Stand()
+                IF the player chooses Hit():
+                        the player is randomly assigned 1 card:
+                            the status analysis is performed:
+                                while the player total is less than 21:
+                                  the player is asked to choose: Hit() OR Stand()
+                                  status analysis is performed
+                                  if the player total is greater than 21:
+                                          the dealer is randomly given the choice of Hit() or Stand():
+                                          if the dealer chooses Hit():
+                                              the dealer is randomly assigned 1 card:
+                                              status analysis is performed
+                                              if the dealer total is greater than 21:
+                                                  final analysis is performed
+                                                  the player is asked whether to restart the game
+                                                  if the player chooses 'yes':
+                                                        the program recursively loops back into the function game()
+                                                  else:
+                                                        the program terminates:
+                                                            'Goodbye' is printed
+                                              else if the dealer total is less than 21:
+                                                  the program loops back to line #15
+                                            else if the dealer chooses Stand():
+                                                final analysis is performed
+                                                the player is asked whether to restart the game
+                                                if the player chooses 'yes':
+                                                      the program recursively loops back into the function game()
+                                                else:
+                                                      the program terminates:
+                                                          'Goodbye' is printed
+                                  if the player chooses Hit():
+                                      the program loops back to line #8
+                                  else if the player chooses Stand():
+                                      the dealer is randomly given the choice of Hit() or Stand():
+                                      if the dealer chooses Hit():
+                                          the dealer is randomly assigned 1 card:
+                                          status analysis is performed
+                                          if the dealer total is greater than 21:
+                                              final analysis is performed
+                                              the player is asked whether to restart the game
+                                              if the player chooses 'yes':
+                                                    the program loops back to line #2
+                                              else:
+                                                    the program terminates:
+                                                        'Goodbye' is printed
+                                          else if the dealer total is less than 21:
+                                              the program recursively loops back into the function game()
+                    ELSE IF the player choose stand():
+                              the program loops back to line #14
